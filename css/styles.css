@@ -1,0 +1,414 @@
+/* ===========================
+   CROATIA SHOWCASE – STYLES
+   =========================== */
+
+/* ---- Reset & Base ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red:        #d4293e;
+  --blue:       #1a4d9e;
+  --dark:       #1a1a2e;
+  --dark2:      #16213e;
+  --green:      #0d2818;
+  --warm:       #3a1800;
+  --light-bg:   #f7f5f0;
+  --text:       #2c2c2c;
+  --text-light: #f0ede5;
+  --accent:     #f0a500;
+  --white:      #ffffff;
+  --shadow:     0 4px 24px rgba(0,0,0,.15);
+  --radius:     12px;
+  --tr:         .3s ease;
+  --font-head:  Georgia, serif;
+  --font-body:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+h1, h2, h3 { font-family: var(--font-head); line-height: 1.2; }
+h1 { font-size: clamp(2rem, 6vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+h3 { font-size: 1.1rem; margin-bottom: .4rem; }
+p  { line-height: 1.7; font-size: .96rem; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ========== NAVBAR ========== */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .8rem 2rem;
+  background: rgba(22,33,62,.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid var(--red);
+  transition: var(--tr);
+}
+#navbar.scrolled { padding: .45rem 2rem; }
+
+.nav-brand {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.nav-links { display: flex; gap: 0; list-style: none; }
+.nav-links a {
+  display: block; padding: .45rem .9rem;
+  color: #bbb;
+  text-decoration: none; font-size: .88rem; font-weight: 500;
+  border-radius: 6px; transition: var(--tr);
+}
+.nav-links a:hover, .nav-links a.active {
+  color: var(--white);
+  background: var(--red);
+}
+
+.nav-toggle {
+  display: none;
+  background: none; border: none;
+  color: var(--white); font-size: 1.5rem; cursor: pointer;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  gap: .35rem;
+  margin-left: .8rem;
+}
+
+.lang-btn {
+  border: 1px solid rgba(255,255,255,.35);
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.85);
+  padding: .28rem .48rem;
+  font-size: .72rem;
+  line-height: 1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--tr);
+}
+
+.lang-btn:hover {
+  background: rgba(255,255,255,.18);
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #111;
+  font-weight: 700;
+}
+
+/* ========== HERO ========== */
+#hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 6rem 1.5rem 4rem;
+  position: relative;
+  background: linear-gradient(160deg, rgba(10,22,40,.8) 0%, rgba(26,45,90,.7) 45%, rgba(45,20,40,.85) 100%),
+              url('../Resources/croatia-flag-gif.gif') center/cover no-repeat;
+}
+
+/* Decorative blobs */
+#hero::before, #hero::after {
+  content: '';
+  position: absolute; border-radius: 50%; filter: blur(80px); z-index: 0;
+}
+#hero::before {
+  width: 600px; height: 600px;
+  background: rgba(212,41,62,.25);
+  top: -100px; left: -200px;
+}
+#hero::after {
+  width: 500px; height: 500px;
+  background: rgba(26,77,158,.3);
+  bottom: -100px; right: -150px;
+}
+
+.hero-content {
+  position: relative; z-index: 1;
+  max-width: 750px;
+}
+.hero-content h1 {
+  color: var(--white);
+  text-shadow: 0 2px 20px rgba(0,0,0,.5);
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  color: rgba(255,255,255,.85);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.btn-primary {
+  display: inline-block; padding: .85rem 2.2rem;
+  background: var(--red); color: var(--white);
+  text-decoration: none; border-radius: 50px;
+  font-weight: 600; font-size: 1rem; letter-spacing: .5px;
+  transition: var(--tr);
+  box-shadow: 0 4px 20px rgba(212,41,62,.5);
+}
+.btn-primary:hover {
+  background: #b01e30;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(212,41,62,.6);
+}
+
+.hero-badges {
+  position: relative; z-index: 1;
+  display: flex; gap: 1.2rem; flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.badge {
+  display: flex; flex-direction: column; align-items: center;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  backdrop-filter: blur(8px);
+  border-radius: 12px; padding: .9rem 1.4rem; min-width: 105px;
+}
+.badge-num  { font-size: 1.45rem; font-weight: 700; color: var(--white); font-family: var(--font-head); }
+.badge-label{ font-size: .72rem; color: rgba(255,255,255,.7); text-transform: uppercase; letter-spacing: 1px; margin-top: .2rem; }
+
+/* ========== SECTIONS ========== */
+.section { padding: 80px 0; }
+.section-light { background: var(--light-bg); }
+.section-dark  { background: var(--dark2);    color: var(--text-light); }
+.section-green { background: linear-gradient(135deg, #0d2818 0%, #1a4731 100%); color: var(--text-light); }
+.section-warm  { background: linear-gradient(135deg, #3a1800 0%, #6b3a00 100%); color: var(--text-light); }
+
+.section-header        { text-align: center; margin-bottom: 50px; }
+.section-header.light h2,
+.section-header.light .section-sub { color: var(--text-light); }
+.section-header h2    { margin: .3rem 0 .6rem; }
+.section-icon         { font-size: 2.5rem; display: block; margin-bottom: .3rem; }
+.section-sub          { font-size: 1.05rem; color: #666; font-style: italic; }
+.section-dark  .section-sub,
+.section-green .section-sub,
+.section-warm  .section-sub { color: rgba(255,255,255,.65); }
+
+/* ========== CARDS ========== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.4rem;
+}
+.card {
+  background: var(--white);
+  border-radius: var(--radius); padding: 1.7rem;
+  box-shadow: var(--shadow); transition: var(--tr);
+  border-top: 4px solid var(--red);
+}
+.section-dark .card,
+.section-green .card,
+.section-warm .card {
+  background: rgba(255,255,255,.07);
+  border-top-color: var(--accent);
+  color: var(--text-light);
+}
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 36px rgba(0,0,0,.22); }
+.card-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 1rem;
+  max-height: 240px;
+}
+.card-icon  { font-size: 2rem; margin-bottom: .6rem; }
+.card h3    { color: var(--red); }
+.section-dark  .card h3,
+.section-green .card h3,
+.section-warm  .card h3 { color: var(--accent); }
+
+/* ========== POLITICS ========== */
+.politics-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3rem; align-items: start;
+}
+.info-item {
+  display: grid; grid-template-columns: 190px 1fr; gap: 1rem;
+  padding: .75rem 0; border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.info-item strong { color: var(--accent); font-size: .88rem; text-transform: uppercase; letter-spacing: .5px; }
+.info-item span   { font-size: .93rem; color: rgba(255,255,255,.82); }
+
+/* CSS Flag */
+.flag-block    { text-align: center; }
+.flag-croatia  {
+  width: 260px; height: 163px;
+  border-radius: 8px; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,.5);
+  position: relative; margin: 0 auto 1rem;
+  display: flex; flex-direction: column;
+}
+.flag-red   { flex: 1; background: #D4293E; }
+.flag-white { flex: 1; background: #FFFFFF; }
+.flag-blue  { flex: 1; background: #1A4D9E; }
+.flag-coat  {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px; height: 56px;
+}
+.checkerboard {
+  width: 56px; height: 56px;
+  background-image: repeating-conic-gradient(#D4293E 0% 25%, #FFFFFF 0% 50%);
+  background-size: 11px 11px;
+  border: 3px solid #777; border-radius: 2px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+}
+.flag-caption { color: rgba(255,255,255,.75); font-size: .88rem; line-height: 1.5; }
+
+/* ========== TABS ========== */
+.nature-tabs { display: flex; gap: .7rem; flex-wrap: wrap; margin-bottom: 2rem; justify-content: center; }
+.tab-btn {
+  padding: .5rem 1.3rem;
+  border: 2px solid rgba(255,255,255,.28);
+  background: transparent; color: rgba(255,255,255,.72);
+  border-radius: 50px; cursor: pointer;
+  font-size: .88rem; font-weight: 500; transition: var(--tr);
+}
+.tab-btn:hover, .tab-btn.active {
+  background: var(--accent); border-color: var(--accent); color: #000;
+}
+.section-light .tab-btn {
+  border-color: rgba(44,44,44,.16);
+  background: rgba(255,255,255,.92);
+  color: rgba(44,44,44,.85);
+}
+.section-light .tab-btn:hover,
+.section-light .tab-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+}
+.tab-content         { display: none; }
+.tab-content.active  { display: block; }
+
+/* ========== PEOPLE ========== */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+.person-card {
+  background: var(--white); border-radius: var(--radius);
+  padding: 1.7rem; box-shadow: var(--shadow);
+  transition: var(--tr); text-align: center;
+  border-bottom: 4px solid var(--blue);
+}
+.person-card:hover { transform: translateY(-5px); box-shadow: 0 10px 36px rgba(0,0,0,.15); }
+.person-avatar {
+  width: 68px; height: 68px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.9rem; margin: 0 auto 1rem;
+}
+.person-card h3     { color: var(--blue); margin-bottom: .2rem; }
+.person-title       { font-size: .8rem; text-transform: uppercase; letter-spacing: .8px; color: var(--red); font-weight: 600; margin-bottom: .6rem; }
+.person-card p      { text-align: left; font-size: .92rem; }
+
+/* ========== FOOD REGIONS ========== */
+.food-regions  { display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
+.region-badge  {
+  padding: .5rem 1.3rem;
+  border: 2px solid rgba(255,255,255,.28);
+  background: transparent; color: rgba(255,255,255,.72);
+  border-radius: 50px; cursor: pointer;
+  font-size: .88rem; font-weight: 600; transition: var(--tr); user-select: none;
+}
+.region-badge:hover, .region-badge.active {
+  background: var(--accent); border-color: var(--accent); color: #000;
+}
+.food-content        { display: none; }
+.food-content.active { display: block; }
+
+/* ========== CURIOSITIES ========== */
+.curiosities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.4rem;
+}
+.curiosity-card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: var(--radius); padding: 1.7rem; transition: var(--tr);
+}
+.curiosity-card:hover { background: rgba(255,255,255,.1); transform: translateY(-3px); }
+.curiosity-num  { font-size: 2.4rem; font-family: var(--font-head); font-weight: 700; color: var(--red); line-height: 1; margin-bottom: .5rem; }
+.curiosity-card h3 { color: var(--accent); margin-bottom: .5rem; font-size: 1rem; }
+.curiosity-card p  { color: rgba(255,255,255,.8); font-size: .92rem; }
+
+/* ========== FOOTER ========== */
+footer { background: #0a0a1a; color: rgba(255,255,255,.55); padding: 2.5rem 1.5rem; text-align: center; }
+.footer-inner  { display: flex; flex-direction: column; align-items: center; gap: .8rem; }
+.footer-brand  { font-size: 1.5rem; color: var(--white); font-family: var(--font-head); }
+.footer-links  { display: flex; gap: .5rem 1.4rem; flex-wrap: wrap; justify-content: center; }
+.footer-links a{ color: rgba(255,255,255,.5); text-decoration: none; font-size: .84rem; transition: var(--tr); }
+.footer-links a:hover { color: var(--accent); }
+
+/* ========== SCROLL TOP ========== */
+.scroll-top {
+  position: fixed; bottom: 1.5rem; right: 1.5rem;
+  background: var(--red); color: var(--white);
+  width: 46px; height: 46px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; font-size: 1.3rem;
+  box-shadow: 0 4px 16px rgba(212,41,62,.5);
+  opacity: 0; pointer-events: none; transition: var(--tr); z-index: 900;
+}
+.scroll-top.visible { opacity: 1; pointer-events: all; }
+.scroll-top:hover   { background: #b01e30; transform: scale(1.1); }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .politics-layout { grid-template-columns: 1fr; }
+  .flag-block { order: -1; }
+  .info-item  { grid-template-columns: 1fr; gap: .2rem; }
+}
+
+@media (max-width: 600px) {
+  .nav-toggle { display: block; }
+  .lang-switcher { margin-left: auto; margin-right: .5rem; }
+  .nav-links {
+    display: none;
+    position: fixed; top: 62px; left: 0; right: 0;
+    background: rgba(22,33,62,.97);
+    flex-direction: column; padding: 1rem 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: .75rem 2rem; border-radius: 0; }
+  .hero-badges { gap: .7rem; }
+  .badge { min-width: 85px; padding: .65rem .9rem; }
+  .badge-num { font-size: 1.15rem; }
+  .section { padding: 55px 0; }
+  .cards-grid, .people-grid, .curiosities-grid { grid-template-columns: 1fr; }
+}
+
+/* ========== FADE-IN ANIMATION ========== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card, .person-card, .curiosity-card, .section-header {
+  animation: fadeInUp .55s ease both;
+  animation-play-state: paused;
+}
+.card:nth-child(2)  { animation-delay: .08s; }
+.card:nth-child(3)  { animation-delay: .16s; }
+.card:nth-child(4)  { animation-delay: .24s; }
+.card:nth-child(5)  { animation-delay: .32s; }
+.card:nth-child(6)  { animation-delay: .40s; }
