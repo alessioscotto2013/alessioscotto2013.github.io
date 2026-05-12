@@ -188,7 +188,25 @@ p  { line-height: 1.7; font-size: .96rem; }
 .section-light { background: var(--light-bg); }
 .section-dark  { background: var(--dark2);    color: var(--text-light); }
 .section-green { background: linear-gradient(135deg, #0d2818 0%, #1a4731 100%); color: var(--text-light); }
+.section-blue  { background: linear-gradient(135deg, #083856 0%, #176b95 100%); color: var(--text-light); }
 .section-warm  { background: linear-gradient(135deg, #3a1800 0%, #6b3a00 100%); color: var(--text-light); }
+.section-blue .section-header.light h2,
+.section-blue .section-header.light .section-sub { color: var(--text-light); }
+.section-blue .section-sub { color: rgba(255,255,255,.75); }
+.section-blue .card { background: rgba(255,255,255,.08); border-top-color: var(--accent); color: var(--text-light); }
+.section-blue .card h3 { color: var(--accent); }
+.section-blue .tab-btn {
+  border-color: rgba(255,255,255,.2);
+  background: rgba(255,255,255,.08);
+  color: rgba(255,255,255,.9);
+}
+.section-blue .tab-btn:hover,
+.section-blue .tab-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+}
+.section-blue .tab-btn { transition: var(--tr); }
 
 .section-header        { text-align: center; margin-bottom: 50px; }
 .section-header.light h2,
@@ -313,13 +331,55 @@ p  { line-height: 1.7; font-size: .96rem; }
 }
 .person-card:hover { transform: translateY(-5px); box-shadow: 0 10px 36px rgba(0,0,0,.15); }
 .person-avatar {
-  width: 68px; height: 68px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.9rem; margin: 0 auto 1rem;
+  width: 100%; max-width: 120px; height: 120px;
+  border-radius: 50%;
+  display: block; margin: 0 auto 1rem;
+  object-fit: cover;
+  border: 3px solid var(--blue);
 }
 .person-card h3     { color: var(--blue); margin-bottom: .2rem; }
 .person-title       { font-size: .8rem; text-transform: uppercase; letter-spacing: .8px; color: var(--red); font-weight: 600; margin-bottom: .6rem; }
 .person-card p      { text-align: left; font-size: .92rem; }
+
+/* ========== MAPS ========== */
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+  margin-bottom: 1rem;
+}
+.map-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.7rem;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--blue);
+}
+.map-card h3 {
+  margin-bottom: .8rem;
+  color: var(--blue);
+}
+.map-card p {
+  color: #424242;
+  line-height: 1.6;
+}
+.map-figure {
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(44,44,44,.08);
+  background: #eef6ff;
+}
+.map-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.map-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* ========== FOOD REGIONS ========== */
 .food-regions  { display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
