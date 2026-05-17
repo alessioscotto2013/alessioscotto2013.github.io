@@ -14,7 +14,7 @@
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#hero"        data-i18n="nav_home">Home</a></li>
-      <li><a href="#geography"   data-i18n="nav_geography">Geography</a></li>
+      <li><a href="#geography"   data-i18n="nav_geography">Territory & Climate</a></li>
       <li><a href="#politics"    data-i18n="nav_politics">Politics</a></li>
       <li><a href="#nature"      data-i18n="nav_nature">Nature</a></li>
       <li><a href="#economics"   data-i18n="nav_economics">Economics</a></li>
@@ -40,7 +40,11 @@
       <div class="badge"><span class="badge-num">1244</span><span class="badge-label" data-i18n="badge_islands">Islands</span></div>
       <div class="badge"><span class="badge-num">8</span><span class="badge-label" data-i18n="badge_parks">National Parks</span></div>
       <div class="badge"><span class="badge-num">5835 km</span><span class="badge-label" data-i18n="badge_coast">Coastline</span></div>
+      <div class="badge"><span class="badge-num">56,594 km²</span><span class="badge-label" data-i18n="badge_area">Area</span></div>
+      <div class="badge"><span class="badge-num">€</span><span class="badge-label" data-i18n="badge_currency">Currency</span></div>
+      <div class="badge"><span class="badge-num">Zagreb</span><span class="badge-label" data-i18n="badge_capital">Capital</span></div>
       <div class="badge"><span class="badge-num">~3.9M</span><span class="badge-label" data-i18n="badge_pop">Population</span></div>
+      <div class="badge"><span class="badge-num">73 / km²</span><span class="badge-label" data-i18n="badge_density">Density</span></div>
     </div>
   </section>
 
@@ -49,8 +53,8 @@
     <div class="container">
       <div class="section-header">
         <span class="section-icon">🗺️</span>
-        <h2 data-i18n="geo_title">Geography</h2>
-        <p class="section-sub" data-i18n="geo_sub">A land shaped by sea, mountains, and rivers</p>
+      <h2 data-i18n="geo_title">Territory & Climate</h2>
+      <p class="section-sub" data-i18n="geo_sub">A land shaped by coast, mountains, and climate</p>
       </div>
       <div class="tabs">
         <div class="nature-tabs">
@@ -128,23 +132,16 @@
     <div class="container">
       <div class="section-header">
         <span class="section-icon">🗺️</span>
-        <h2 data-i18n="maps_title">Maps of Croatia</h2>
-        <p class="section-sub" data-i18n="maps_sub">Political borders, neighbouring countries, and physical terrain views of Croatia</p>
+        <h2 data-i18n="maps_title">Borders</h2>
+        <p class="section-sub" data-i18n="maps_sub">Political borders and neighbouring countries of Croatia</p>
       </div>
       <div class="map-grid">
-        <article class="map-card">
+        <article class="map-card map-card-large">
           <h3 data-i18n="map_political_title">Political Map</h3>
           <div class="map-figure">
             <img src="Resources/mappa-politica-croazia.jpg" alt="Political map of Croatia with neighbouring countries">
           </div>
           <p data-i18n="map_political_p">Croatia shares land borders with Slovenia, Hungary, Serbia, Bosnia and Herzegovina, and Montenegro, while the long Adriatic coast faces Italy across the sea.</p>
-        </article>
-        <article class="map-card">
-          <h3 data-i18n="map_physical_title">Physical Map</h3>
-          <div class="map-figure">
-            <img src="Resources/mappa-fisica-della-croazia.jpg" alt="Physical map of Croatia with mountains, plains, and sea">
-          </div>
-          <p data-i18n="map_physical_p">The physical view highlights Croatia's coastal mountains, the inland karst and hill regions, and the fertile eastern plains that extend toward the Danube.</p>
         </article>
       </div>
     </div>
@@ -160,16 +157,9 @@
       </div>
       <div class="politics-layout">
         <div class="politics-info">
-          <div class="info-item"><strong data-i18n="pol_l1_k">Official Name</strong><span data-i18n="pol_l1_v">Republic of Croatia (Republika Hrvatska)</span></div>
           <div class="info-item"><strong data-i18n="pol_l2_k">Government</strong><span data-i18n="pol_l2_v">Unitary parliamentary constitutional republic</span></div>
           <div class="info-item"><strong data-i18n="pol_l3_k">Independence</strong><span data-i18n="pol_l3_v">Declared 25 June 1991 from Yugoslavia; internationally recognised 15 January 1992</span></div>
-          <div class="info-item"><strong data-i18n="pol_l4_k">Capital</strong><span data-i18n="pol_l4_v">Zagreb (population ~800,000)</span></div>
           <div class="info-item"><strong data-i18n="pol_l5_k">EU Member</strong><span data-i18n="pol_l5_v">Joined the European Union on 1 July 2013; adopted the Euro on 1 January 2023</span></div>
-          <div class="info-item"><strong data-i18n="pol_l6_k">NATO Member</strong><span data-i18n="pol_l6_v">Joined NATO on 1 April 2009</span></div>
-          <div class="info-item"><strong data-i18n="pol_l7_k">Parliament</strong><span data-i18n="pol_l7_v">Hrvatski sabor – unicameral, 151 seats</span></div>
-          <div class="info-item"><strong data-i18n="pol_l8_k">Admin Divisions</strong><span data-i18n="pol_l8_v">20 counties (županije) + the City of Zagreb</span></div>
-          <div class="info-item"><strong data-i18n="pol_l9_k">Population Density</strong><span data-i18n="pol_l9_v">73 people per km²</span></div>
-          <div class="info-item"><strong data-i18n="pol_l11_k">GDP</strong><span data-i18n="pol_l11_v">$74 billion (nominal, 2023 estimate)</span></div>
           <div class="info-item"><strong data-i18n="pol_l12_k">GDP per Capita</strong><span data-i18n="pol_l12_v">$18,000 (nominal, 2023 estimate)</span></div>
           <div class="info-item"><strong data-i18n="pol_l10_k">Major Cities</strong><span data-i18n="pol_l10_v">Zagreb (800,000), Split (178,000), Rijeka (129,000), Osijek (108,000), Zadar (75,000)</span></div>
         </div>
@@ -253,10 +243,10 @@
       </div>
       <div class="tabs">
         <div class="nature-tabs">
-          <button class="tab-btn active" data-tab="primary" data-i18n="eco_tab_primary">Primary Sector</button>
-          <button class="tab-btn" data-tab="secondary" data-i18n="eco_tab_secondary">Secondary Sector</button>
-          <button class="tab-btn" data-tab="tertiary" data-i18n="eco_tab_tertiary">Tertiary Sector</button>
-          <button class="tab-btn" data-tab="tourism" data-i18n="eco_tab_tourism">Tourism</button>
+          <button class="tab-btn active" data-tab="primary" data-i18n="eco_tab_primary">Primary Sector (5% GDP)</button>
+          <button class="tab-btn" data-tab="secondary" data-i18n="eco_tab_secondary">Secondary Sector (25% GDP)</button>
+          <button class="tab-btn" data-tab="tertiary" data-i18n="eco_tab_tertiary">Tertiary Sector (70% GDP)</button>
+          <button class="tab-btn" data-tab="tourism" data-i18n="eco_tab_tourism">Tourism (20% GDP)</button>
         </div>
         <div class="tab-content active" id="tab-primary">
         <div class="cards-grid">
@@ -290,6 +280,33 @@
     </div>
   </section>
 
+  <!-- CULTURE & POPULATION -->
+  <section id="culture-population" class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-icon">🎭</span>
+        <h2 data-i18n="culture_title">Culture & Population</h2>
+        <p class="section-sub" data-i18n="culture_sub">Languages, religions, and ethnic groups across Croatia</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🗣️</div>
+          <h3 data-i18n="culture_lang_h">Languages Spoken</h3>
+          <p data-i18n="culture_lang_p">Croatian is the official language. Minority languages include Serbian, Italian, Hungarian, Czech, Slovak, and Romani, protected in local municipalities.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✝️</div>
+          <h3 data-i18n="culture_religion_h">Religions</h3>
+          <p data-i18n="culture_religion_p">The majority of Croatians are Roman Catholic. Other faiths include Serbian Orthodox, Islam, Protestantism, and growing secular or non-religious communities.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌍</div>
+          <h3 data-i18n="culture_ethnic_h">Ethnic Presence</h3>
+          <p data-i18n="culture_ethnic_p">Croats make up about 90% of the population. Significant minorities include Serbs, Bosniaks, Italians, Hungarians, Albanians, and Roma.</p>
+        </div>
+      </div>
+    </div>
+
   <!-- FAMOUS PEOPLE -->
   <section id="famous" class="section section-light">
     <div class="container">
@@ -300,13 +317,9 @@
       </div>
       <div class="people-grid">
         <div class="person-card"><img class="person-avatar" src="Resources/nikola tesla.jpg" alt="Nikola Tesla"><h3>Nikola Tesla</h3><p class="person-title" data-i18n="fam_p1_t">Inventor &amp; Electrical Engineer</p><p data-i18n="fam_p1_p">Born 10 July 1856 in Smiljan (now Croatia). Pioneer of alternating current (AC), the induction motor, and wireless transmission. His work underpins modern electrical systems worldwide.</p></div>
-        <div class="person-card"><img class="person-avatar" src="Resources/Ruđer Bošković.jpg" alt="Ruđer Bošković"><h3>Ruđer Bošković</h3><p class="person-title" data-i18n="fam_p2_t">Polymath – Physics, Astronomy, Mathematics</p><p data-i18n="fam_p2_p">Born 1711 in Dubrovnik. Developed the first coherent atomic theory, anticipating quantum mechanics by 200 years. His portrait appeared on the Croatian 10 kuna note.</p></div>
         <div class="person-card"><img class="person-avatar" src="Resources/Luka Modrić.jpg" alt="Luka Modrić"><h3>Luka Modrić</h3><p class="person-title" data-i18n="fam_p3_t">Football Player</p><p data-i18n="fam_p3_p">Born 1985 in Zadar. Real Madrid and Croatia legend, winner of the 2018 Ballon d'Or. Led Croatia to the 2018 World Cup Final and 2022 third place.</p></div>
-        <div class="person-card"><img class="person-avatar" src="Resources/Janica Kostelić.webp" alt="Janica Kostelić"><h3>Janica Kostelić</h3><p class="person-title" data-i18n="fam_p4_t">Alpine Skier</p><p data-i18n="fam_p4_p">Born 1982 in Zagreb. The most decorated female alpine skier ever: 4 Olympic gold medals, 3 World Championship titles, and 5 overall World Cup titles.</p></div>
         <div class="person-card"><img class="person-avatar" src="Resources/Goran.jpg" alt="Goran Ivanišević"><h3>Goran Ivanišević</h3><p class="person-title" data-i18n="fam_p5_t">Tennis Player</p><p data-i18n="fam_p5_p">Born 1971 in Split. Won Wimbledon 2001 as a wildcard in one of tennis's most dramatic finals. Known for his devastating serve — at one time the fastest in the world.</p></div>
         <div class="person-card"><img class="person-avatar" src="Resources/Lavoslav Ružička.jpg" alt="Lavoslav Ružička"><h3>Lavoslav Ružička</h3><p class="person-title" data-i18n="fam_p6_t">Chemist – Nobel Laureate 1939</p><p data-i18n="fam_p6_p">Born 1887 in Vukovar. Awarded the Nobel Prize in Chemistry for work on polymethylenes and higher terpenes, laying the foundation for modern steroid chemistry.</p></div>
-        <div class="person-card"><img class="person-avatar" src="Resources/Miroslav Krleža.jpg" alt="Miroslav Krleža"><h3>Miroslav Krleža</h3><p class="person-title" data-i18n="fam_p7_t">Writer &amp; Playwright</p><p data-i18n="fam_p7_p">Born 1893 in Zagreb. Croatia's greatest 20th-century writer, novelist, playwright, and encyclopaedist. His works expose the absurdities of war and nationalism.</p></div>
-        <div class="person-card"><img class="person-avatar" src="Resources/Blanka Vlašić.jpg" alt="Blanka Vlašić"><h3>Blanka Vlašić</h3><p class="person-title" data-i18n="fam_p8_t">High Jumper</p><p data-i18n="fam_p8_p">Born 1983 in Split. Two-time World Champion (2007, 2009) and Olympic silver medallist. Regarded as one of the greatest high jumpers in history.</p></div>
       </div>
     </div>
   </section>
@@ -319,109 +332,30 @@
         <h2 data-i18n="food_title">Croatian Cuisine</h2>
         <p class="section-sub" data-i18n="food_sub">A table where the Mediterranean meets Central Europe</p>
       </div>
-      <div class="food-regions">
-        <div class="region-badge active" data-region="dalmatia" data-i18n="food_tab_dal">🌊 Dalmatia</div>
-        <div class="region-badge" data-region="istria"   data-i18n="food_tab_ist">🍄 Istria</div>
-        <div class="region-badge" data-region="slavonia" data-i18n="food_tab_sla">🌶️ Slavonia</div>
-        <div class="region-badge" data-region="zagreb"   data-i18n="food_tab_zag">🏙️ Zagreb</div>
-      </div>
-      <div class="food-content active" id="food-dalmatia">
-        <div class="cards-grid">
-          <div class="card">
-            <img src="Resources/Croatian-Lamb-Peka.jpg" alt="Peka" class="card-image" />
-            <h3 data-i18n="food_d1_h">Peka</h3>
-            <p data-i18n="food_d1_p">Lamb or octopus slow-cooked under a bell-shaped iron lid covered in embers. The ultimate Dalmatian slow-food, juicy, smoky, and deeply flavourful.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Mali-Ston-Oysters-.jpg" alt="Ston Oysters" class="card-image" />
-            <h3 data-i18n="food_d2_h">Ston Oysters</h3>
-            <p data-i18n="food_d2_p">Oysters from the Ston bay are among Europe's finest, cultivated in pristine waters since Roman times in one of the world's oldest oyster farms.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/pasticada.jpg" alt="Pašticada" class="card-image" />
-            <h3 data-i18n="food_d3_h">Pašticada</h3>
-            <p data-i18n="food_d3_p">Beef marinated for 24 hours in vinegar and spices, then slow-braised with prunes, wine, and vegetables. The quintessential Sunday dish of Split and central Dalmatia.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Vino Plavac Mali.jpg" alt="Plavac Mali Wine" class="card-image" />
-            <h3 data-i18n="food_d4_h">Plavac Mali Wine</h3>
-            <p data-i18n="food_d4_p">The bold red wine grape of Pelješac and Hvar. Dingač and Postup are the two premium appellations, dense, with notes of dried figs, leather, and sea air.</p>
-          </div>
+      <div class="cards-grid">
+        <div class="card">
+          <img src="Resources/pasticada.jpg" alt="Pašticada" class="card-image" />
+          <h3 data-i18n="food_d3_h">Pašticada</h3>
+          <p data-i18n="food_d3_p">Beef marinated for 24 hours in vinegar and spices, then slow-braised with prunes, wine, and vegetables. The quintessential Sunday dish of Split and central Dalmatia.</p>
         </div>
-      </div>
-      <div class="food-content" id="food-istria">
-        <div class="cards-grid">
-          <div class="card">
-            <img src="Resources/Tartufo Istriano.jpg" alt="Istrian Truffle" class="card-image" />
-            <h3 data-i18n="food_i1_h">Istrian Truffle</h3>
-            <p data-i18n="food_i1_p">The Motovun forest produces white truffles rivalling Alba's finest. Shaved over fresh pasta, eggs, and risotto, the culinary crown of Istria.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Fuzi e Pljukanci.jpg" alt="Fuži &amp; Pljukanci" class="card-image" />
-            <h3 data-i18n="food_i2_h">Fuži &amp; Pljukanci</h3>
-            <p data-i18n="food_i2_p">Hand-rolled pasta shapes unique to Istria, fuži are quill-shaped rolls, pljukanci are twisted noodles, served with truffle or wild boar ragù.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Olio d'Oliva Istriano.jpg" alt="Istrian Olive Oil" class="card-image" />
-            <h3 data-i18n="food_i3_h">Istrian Olive Oil</h3>
-            <p data-i18n="food_i3_p">Gold-medal Istrian olive oils have beaten Tuscany and Provence at international competitions. Buža and Carbonazza varieties are prized for their grassy intensity.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Vino Malvazija.webp" alt="Malvazija Wine" class="card-image" />
-            <h3 data-i18n="food_i4_h">Malvazija Wine</h3>
-            <p data-i18n="food_i4_p">The white wine of Istria, made from the indigenous Malvazija Istarska grape. Fresh, floral, and mineral; an ideal partner for seafood and truffles.</p>
-          </div>
+        <div class="card">
+          <img src="Resources/Fuzi e Pljukanci.jpg" alt="Fuži &amp; Pljukanci" class="card-image" />
+          <h3 data-i18n="food_i2_h">Fuži &amp; Pljukanci</h3>
+          <p data-i18n="food_i2_p">Hand-rolled pasta shapes unique to Istria, fuži are quill-shaped rolls, pljukanci are twisted noodles, served with truffle or wild boar ragù.</p>
         </div>
-      </div>
-      <div class="food-content" id="food-slavonia">
-        <div class="cards-grid">
-          <div class="card">
-            <img src="Resources/Kulen.jpg" alt="Kulen" class="card-image" />
-            <h3 data-i18n="food_s1_h">Kulen</h3>
-            <p data-i18n="food_s1_p">A heavily spiced cured sausage flavoured with sweet and hot paprika. Slavonski kulen has EU Protected Designation of Origin status.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Cobanac.jpg" alt="Čobanac" class="card-image" />
-            <h3 data-i18n="food_s2_h">Čobanac</h3>
-            <p data-i18n="food_s2_p">A fiery shepherd's stew from multiple meats with generous paprika and hot peppers, slow-cooked in a copper pot over an open fire.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Fis Paprikas.jpg" alt="Fiš Paprikaš" class="card-image" />
-            <h3 data-i18n="food_s3_h">Fiš Paprikaš</h3>
-            <p data-i18n="food_s3_p">A rich paprika-spiced river fish stew from carp, catfish, and pike caught in the Drava and Sava rivers. Best eaten outdoors with fresh bread.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Vino Grasevina.webp" alt="Graševina Wine" class="card-image" />
-            <h3 data-i18n="food_s4_h">Graševina Wine</h3>
-            <p data-i18n="food_s4_p">The most planted white variety in Croatia, dominant in Slavonia's Kutjevo region. Ranges from crisp and dry to rich late-harvest with a distinctive continental style.</p>
-          </div>
+        <div class="card">
+          <img src="Resources/Kulen.jpg" alt="Kulen" class="card-image" />
+          <h3 data-i18n="food_s1_h">Kulen</h3>
+          <p data-i18n="food_s1_p">A heavily spiced cured sausage flavoured with sweet and hot paprika. Slavonski kulen has EU Protected Designation of Origin status.</p>
         </div>
-      </div>
-      <div class="food-content" id="food-zagreb">
-        <div class="cards-grid">
-          <div class="card">
-            <img src="Resources/Strukli.webp" alt="Štrukli" class="card-image" />
-            <h3 data-i18n="food_z1_h">Štrukli</h3>
-            <p data-i18n="food_z1_p">Cottage-cheese filled dough, baked or boiled, the iconic dish of Zagorje and Zagreb. Since 2007, štrukli is listed on UNESCO's Intangible Cultural Heritage of Croatia.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Zagrebacki Odrezak.jpg" alt="Zagrebački Odrezak" class="card-image" />
-            <h3 data-i18n="food_z2_h">Zagrebački Odrezak</h3>
-            <p data-i18n="food_z2_p">The "Zagreb schnitzel", a veal escalope stuffed with ham and cheese, breaded and fried. Zagreb's answer to Cordon Bleu, possibly predating the Swiss version.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/Kremsnita.jpg" alt="Kremšnita" class="card-image" />
-            <h3 data-i18n="food_z3_h">Kremšnita</h3>
-            <p data-i18n="food_z3_p">The iconic dessert of Samobor near Zagreb. Layers of crisp puff pastry sandwiching thick vanilla custard cream, dusted with icing sugar.</p>
-          </div>
-          <div class="card">
-            <img src="Resources/culture of coffee.jpg" alt="Coffee Culture" class="card-image" />
-            <h3 data-i18n="food_z4_h">Coffee Culture</h3>
-            <p data-i18n="food_z4_p">"Špica", the Zagreb Saturday-morning coffee ritual on Tkalčićeva street, is a cherished social institution. Zagreb has one of Europe's richest café traditions.</p>
-          </div>
+        <div class="card">
+          <img src="Resources/Kremsnita.jpg" alt="Kremšnita" class="card-image" />
+          <h3 data-i18n="food_z3_h">Kremšnita</h3>
+          <p data-i18n="food_z3_p">The iconic dessert of Samobor near Zagreb. Layers of crisp puff pastry sandwiching thick vanilla custard cream, dusted with icing sugar.</p>
         </div>
       </div>
     </div>
+  </section>
   </section>
 
   <!-- CURIOSITIES -->
@@ -434,17 +368,11 @@
       </div>
       <div class="curiosities-grid">
         <div class="curiosity-card"><div class="curiosity-num">01</div><h3 data-i18n="cur_c1_h">The Cravat (Tie) is Croatian</h3><p data-i18n="cur_c1_p">The modern necktie originates from Croatia. Croatian soldiers in the Thirty Years' War wore distinctive scarves. The French adopted it, calling it "cravate", from Croate (Croatian). Cravat Day is celebrated every 18 October.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">02</div><h3 data-i18n="cur_c2_h">Inventor of the Mechanical Pen</h3><p data-i18n="cur_c2_p">Slavoljub Penkala patented the first solid-ink mechanical pencil in 1906 and the first capped fountain pen in 1907. The company TOZ Penkala is still one of Europe's leading pen manufacturers.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">03</div><h3 data-i18n="cur_c3_h">Game of Thrones – Dubrovnik</h3><p data-i18n="cur_c3_p">Dubrovnik's Old Town served as King's Landing in HBO's Game of Thrones. Croatia was also filmed in Split (Diocletian's Palace = Meereen), Šibenik, and Klis Fortress. Tourism increased over 50% during filming years.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">04</div><h3 data-i18n="cur_c4_h">The World's Smallest Town</h3><p data-i18n="cur_c4_p">Hum, in Istria, claims to be the world's smallest town with just 17–30 residents. It has a mayor, a church, a tavern, and walls dating to the 11th century.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">05</div><h3 data-i18n="cur_c5_h">First Parachute Design</h3><p data-i18n="cur_c5_p">Croatia's Faust Vrančić designed and tested what is possibly the first parachute device (Homo Volans) in 1617, allegedly jumping from a Venice tower at age 65.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">06</div><h3 data-i18n="cur_c6_h">The Dalmatian Dog</h3><p data-i18n="cur_c6_p">The Dalmatian breed takes its name from the Dalmatian coast of Croatia, where it was historically depicted in church frescos and old paintings. The FCI officially recognises Croatia as its country of origin.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">07</div><h3 data-i18n="cur_c7_h">World's First Torpedo</h3><p data-i18n="cur_c7_p">Ivan Lupis, a Croatian officer in the Austrian Navy, invented the self-propelled torpedo in 1860, further developed with Robert Whitehead in Rijeka. The modern torpedo was born on Croatian soil.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">08</div><h3 data-i18n="cur_c8_h">Marco Polo from Korčula?</h3><p data-i18n="cur_c8_p">Many historians argue Marco Polo was born on the island of Korčula around 1254, before his family moved to Venice. A house in Korčula town is traditionally identified as his birthplace.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">09</div><h3 data-i18n="cur_c9_h">Oldest Working Theatre in Europe</h3><p data-i18n="cur_c9_p">Hvar's theatre, opened in 1612, is considered the oldest continuously operating municipal theatre in Europe, predating many famous venues across the continent by decades.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">10</div><h3 data-i18n="cur_c10_h">Sun Salutation – Solar Art</h3><p data-i18n="cur_c10_p">Zadar's "Greeting to the Sun" (2008) by architect Nikola Bašić is a 22-metre circle of solar panels in the pavement. At night it produces a stunning light show powered entirely by the Adriatic sun.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">11</div><h3 data-i18n="cur_c11_h">Rimac Nevera – Electric Record</h3><p data-i18n="cur_c11_p">Rimac Automobili's Nevera became the world’s fastest production electric hypercar, hitting 0–62 mph in 1.97 seconds and setting speed runs on Croatian roads and airstrips.</p></div>
-        <div class="curiosity-card"><div class="curiosity-num">12</div><h3 data-i18n="cur_c12_h">Hum – The Smallest Town in the World</h3><p data-i18n="cur_c12_p">Hum in Istria has under 30 residents but still holds town status, historic walls, and a tradition of blessing its single main street each year.</p></div>
+        <div class="curiosity-card"><div class="curiosity-num">02</div><h3 data-i18n="cur_c3_h">Game of Thrones – Dubrovnik</h3><p data-i18n="cur_c3_p">Dubrovnik's Old Town served as King's Landing in HBO's Game of Thrones. Croatia was also filmed in Split (Diocletian's Palace = Meereen), Šibenik, and Klis Fortress. Tourism increased over 50% during filming years.</p></div>
+        <div class="curiosity-card"><div class="curiosity-num">03</div><h3 data-i18n="cur_c7_h">World's First Torpedo</h3><p data-i18n="cur_c7_p">Ivan Lupis, a Croatian officer in the Austrian Navy, invented the self-propelled torpedo in 1860, further developed with Robert Whitehead in Rijeka. The modern torpedo was born on Croatian soil.</p></div>
+        <div class="curiosity-card"><div class="curiosity-num">04</div><h3 data-i18n="cur_c11_h">Rimac Nevera – Electric Record</h3><p data-i18n="cur_c11_p">Rimac Automobili's Nevera became the world’s fastest production electric hypercar, hitting 0–62 mph in 1.97 seconds and setting speed runs on Croatian roads and airstrips.</p></div>
+        <div class="curiosity-card"><div class="curiosity-num">05</div><h3 data-i18n="cur_c12_h">Hum – The Smallest Town in the World</h3><p data-i18n="cur_c12_p">Hum in Istria has under 30 residents but still holds town status, historic walls, and a tradition of blessing its single main street each year.</p></div>
+        <div class="curiosity-card"><div class="curiosity-num">06</div><h3 data-i18n="cur_c13_h">Zagreb's Quirky Museums</h3><p data-i18n="cur_c13_p">Zagreb is home to unusual attractions like the Chocolate Museum, the Video Game History Museum, and the interactive 1980s museum, showcasing sweet traditions and retro digital culture in Croatia's capital.</p></div>
       </div>
     </div>
   </section>
