@@ -103,7 +103,7 @@
       geo_lake_plitvice_h: 'Laghi di Plitvice',
       geo_lake_plitvice_p: 'Un sito Patrimonio dell\'Umanità UNESCO con 16 laghi interconnessi e cascate. Nota per le sue barriere di travertino e ricca biodiversità, è una delle attrazioni naturali più visitate della Croazia.',
       geo_lake_vransko_h: 'Vransko Jezero',
-      geo_lake_vransko_p: 'Il lago naturale più grande della Croazia, situato sull\'isola di Cres. Un lago salato con ecosistemi unici, casa di fenicotteri e altri uccelli migratori, e una riserva naturale protetta.',
+      geo_lake_vransko_p: 'Il lago naturale più grande della Croazia, situato in Dalmazia. Un lago salato con ecosistemi unici, casa di fenicotteri e altri uccelli migratori, e una riserva naturale protetta.',
       geo_lake_prokljansko_h: 'Prokljansko Jezero',
       geo_lake_prokljansko_p: 'Un raro lago salato sull\'isola di Čiovo. Collegato al mare da un canale stretto, offre spiagge, pesca e un ritiro pacifico vicino a Trogir.',
       geo_lake_jarun_h: 'Lago Jarun',
@@ -206,7 +206,7 @@
       eco_tourism_wine_h: 'Turismo Enologico',
       eco_tourism_wine_p: 'Itinerari enologici in Istria e Slavonia offrono degustazioni e visite alle vigne.',
       eco_tourism_stats_h: 'Statistiche del Turismo',
-      eco_tourism_stats_p: 'Oltre 20 milioni di visitatori nel 2019, contribuendo al 20% del PIL. Recupero post-pandemico con focus sul turismo sostenibile.',
+      eco_tourism_stats_p: '21,6 milioni di visitatori nel 2025, contribuendo al 20% del PIL.',
 
       // Nature
       nat_title: 'Natura, Flora e Fauna',
@@ -424,7 +424,7 @@
       geo_lake_plitvice_h: 'Plitvička jezera',
       geo_lake_plitvice_p: 'UNESCO-ova svjetska baština s 16 međusobno povezanih jezera i slapova. Poznati po svojim travertinskim barijerama i bogatoj bioraznolikosti, jedno je od najposjećenijih prirodnih atrakcija Hrvatske.',
       geo_lake_vransko_h: 'Vransko jezero',
-      geo_lake_vransko_p: 'Najveće prirodno jezero u Hrvatskoj, smješteno na otoku Cresu. Slano jezero s jedinstvenim ekosustavima, dom flaminga i drugih selica, i zaštićena prirodna rezerva.',
+      geo_lake_vransko_p: 'Najveće prirodno jezero u Hrvatskoj, smješteno u Dalmaciji. Slano jezero s jedinstvenim ekosustavima, dom flaminga i drugih selica, i zaštićena prirodna rezerva.',
       geo_lake_prokljansko_h: 'Prokljansko jezero',
       geo_lake_prokljansko_p: 'Rijetko slano jezero na otoku Čiovu. Povezano s morem uskim kanalom, nudi plaže, ribolov i miran odmor blizu Trogira.',
       geo_lake_jarun_h: 'Jarunsko jezero',
@@ -527,7 +527,7 @@
       eco_tourism_wine_h: 'Vinski turizam',
       eco_tourism_wine_p: 'Vinske rute u Istri i Slavoniji nude degustacije i posjete vinogradima.',
       eco_tourism_stats_h: 'Statistike turizma',
-      eco_tourism_stats_p: 'Preko 20 milijuna posjetitelja 2019., doprinoseći 20% BDP-a. Oporavak nakon pandemije s fokusom na održivi turizam.',
+      eco_tourism_stats_p: '21,6 milijuna posjetitelja 2025., doprinoseći 20% BDP-a.',
 
       // Priroda
       nat_title: 'Priroda, flora i fauna',
